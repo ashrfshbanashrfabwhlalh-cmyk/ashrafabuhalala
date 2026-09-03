@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>أشرف أبوحلالة</title>
-    <!-- استدعاء خطوط عربية كلاسيكية وأنيقة -->
-    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;600&display=swap" rel="stylesheet">
+    <title>أشرف أبوحلالة | رئيس قطاع التسويق CMO</title>
+    <!-- خطوط عربية احترافية -->
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
     <!-- مكتبة الأيقونات Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
         :root {
-            --bg-color: #f7f5f0;        /* خلفية هادئة كلاسيكية */
-            --card-bg: #ffffff;          /* خلفية البطاقة بيضاء */
-            --primary-text: #2c2c2c;     /* لون النصوص */
-            --accent-color: #8c6d46;    /* لون ذهبي كلاسيكي */
-            --hover-color: #6f5433;     /* لون التفاعل */
-            --border-color: #e2dbce;    /* لون الحدود */
+            --bg-color: #f7f5f0;
+            --card-bg: #ffffff;
+            --primary-text: #2c2c2c;
+            --accent-color: #8c6d46;
+            --hover-color: #6f5433;
+            --border-color: #e2dbce;
         }
 
         * {
@@ -39,7 +39,7 @@
         .container {
             background-color: var(--card-bg);
             border: 1px solid var(--border-color);
-            max-width: 450px;
+            max-width: 480px;
             width: 100%;
             padding: 40px 25px;
             text-align: center;
@@ -48,7 +48,6 @@
             position: relative;
         }
 
-        /* إطار زخرفي كلاسيكي */
         .container::before {
             content: "";
             position: absolute;
@@ -81,26 +80,123 @@
 
         .subtitle {
             font-family: 'Cairo', sans-serif;
-            font-size: 0.9rem;
+            font-size: 0.95rem;
             color: var(--accent-color);
             margin-bottom: 12px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        .bio {
+            font-family: 'Cairo', sans-serif;
+            font-size: 0.88rem;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            padding: 0 10px;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 25px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .skill-tag {
+            font-family: 'Cairo', sans-serif;
+            font-size: 0.75rem;
+            background-color: #faf8f5;
+            color: var(--accent-color);
+            border: 1px solid var(--border-color);
+            padding: 4px 10px;
+            border-radius: 12px;
             font-weight: 600;
         }
 
-        /* النبذة التعريفية */
-        .bio {
+        /* تنسيق قسم المدونة */
+        .section-title {
             font-family: 'Cairo', sans-serif;
-            font-size: 0.9rem;
-            color: #555;
-            line-height: 1.6;
+            font-size: 1.1rem;
+            color: var(--accent-color);
+            margin: 25px 0 15px 0;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .blog-container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
             margin-bottom: 25px;
-            padding: 0 10px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .blog-card {
+            background-color: #faf8f5;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            padding: 15px;
+            text-align: right;
+            transition: all 0.3s ease;
+        }
+
+        .blog-card:hover {
+            border-color: var(--accent-color);
+            box-shadow: 0 4px 12px rgba(140, 109, 70, 0.1);
+        }
+
+        .blog-title {
+            font-family: 'Cairo', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--primary-text);
+            margin-bottom: 5px;
+        }
+
+        .blog-date {
+            font-family: 'Cairo', sans-serif;
+            font-size: 0.75rem;
+            color: #888;
+            margin-bottom: 8px;
+        }
+
+        .blog-snippet {
+            font-family: 'Cairo', sans-serif;
+            font-size: 0.82rem;
+            color: #666;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+
+        .read-btn {
+            display: inline-block;
+            font-family: 'Cairo', sans-serif;
+            font-size: 0.8rem;
+            color: var(--accent-color);
+            font-weight: 700;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .read-btn:hover {
+            color: var(--hover-color);
+            text-decoration: underline;
         }
 
         .links-container {
             display: flex;
             flex-direction: column;
-            gap: 15px;
+            gap: 12px;
             position: relative;
             z-index: 1;
         }
@@ -109,7 +205,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 14px 20px;
+            padding: 12px 20px;
             background-color: #faf8f5;
             border: 1px solid var(--border-color);
             color: var(--primary-text);
@@ -128,7 +224,7 @@
         }
 
         .link-item i.social-icon {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             width: 25px;
             color: var(--accent-color);
             transition: color 0.3s ease;
@@ -138,7 +234,7 @@
             background-color: var(--accent-color);
             color: #ffffff;
             border-color: var(--accent-color);
-            transform: translateY(-3px);
+            transform: translateY(-2px);
             box-shadow: 0 5px 15px rgba(140, 109, 70, 0.2);
         }
 
@@ -151,8 +247,45 @@
             opacity: 0.6;
         }
 
+        /* النافذة المنبثقة لقراءة المقال كامل */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.6);
+            z-index: 100;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .modal-content {
+            background-color: #fff;
+            padding: 25px;
+            border-radius: 6px;
+            max-width: 500px;
+            width: 100%;
+            max-height: 80vh;
+            overflow-y: auto;
+            text-align: right;
+            position: relative;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            color: #888;
+        }
+
         .footer {
-            margin-top: 35px;
+            margin-top: 30px;
             font-family: 'Cairo', sans-serif;
             font-size: 0.8rem;
             color: #999;
@@ -162,7 +295,6 @@
             .container {
                 padding: 30px 18px;
             }
-            
             h1 {
                 font-size: 1.8rem;
             }
@@ -177,15 +309,60 @@
 
         <!-- الاسم والصفة -->
         <h1>أشرف أبوحلالة</h1>
-        <p class="subtitle">طالب إعلام وصانع محتوى</p>
+        <p class="subtitle">Chief Marketing Officer (CMO)</p>
         
-        <!-- النبذة التعريفية الرسمية -->
+        <!-- النبذة التعريفية القيادية -->
         <p class="bio">
-            أنا أشرف أبوحلالة، طالب في كلية الإعلام وشغوف بصناعة المحتوى الرقمي، الصحافة، وسرد القصص المؤثرة. أطمح إلى ترك بصمة إيجابية في عالم الإعلام الحديث.
+            قائد استراتيجي في مجال التسويق وإدارة العلامات التجارية. أعمل على تطوير استراتيجيات النمو، قيادة الحملات الإعلانية المبتكرة، وبناء هوية رقمية قوية تُعزز التواجد في السوق وتحقق أعلى معدلات النمو.
         </p>
 
-        <!-- روابط التواصل الاجتماعي -->
+        <!-- مهارات الـ CMO -->
+        <div class="skills-container">
+            <span class="skill-tag">التسويق الاستراتيجي</span>
+            <span class="skill-tag">إدارة العلامات التجارية</span>
+            <span class="skill-tag">صناعة المحتوى</span>
+            <span class="skill-tag">نمو المبيعات (Growth)</span>
+        </div>
+
+        <!-- قسم المدونة والمقالات -->
+        <div class="section-title">
+            <i class="fas fa-feather-alt"></i> المقالات والرؤى التسويقية
+        </div>
+
+        <div class="blog-container">
+
+            <!-- مقالة 1 -->
+            <div class="blog-card">
+                <div class="blog-title">مستقبل التسويق الرقمي في الشرق الأوسط 2026</div>
+                <div class="blog-date"><i class="far fa-calendar-alt"></i> 15 أغسطس 2026</div>
+                <div class="blog-snippet">نظرة تحليلية على التوجهات الحديثة واستخدام الذكاء الاصطناعي في إعادة هيكلة الميزانيات التسويقية...</div>
+                <span class="read-btn" onclick="openModal('modal1')">اقرأ المقال بالكامل ←</span>
+            </div>
+
+            <!-- مقالة 2 -->
+            <div class="blog-card">
+                <div class="blog-title">كيف تبني علامة تجارية راسخة في الأزمات؟</div>
+                <div class="blog-date"><i class="far fa-calendar-alt"></i> 20 يوليو 2026</div>
+                <div class="blog-snippet">خطوات عمل استراتيجية للـ CMO لحماية ثقة العمالء وتعزيز حصة الشركة السوقية أثناء التغيرات...</div>
+                <span class="read-btn" onclick="openModal('modal2')">اقرأ المقال بالكامل ←</span>
+            </div>
+
+        </div>
+
+        <!-- قسم روابط التواصل -->
+        <div class="section-title">
+            <i class="fas fa-link"></i> التواصل والتواجد الرقمي
+        </div>
+
         <div class="links-container">
+            <!-- لينكد إن -->
+            <a href="https://linkedin.com" target="_blank" class="link-item">
+                <div class="icon-wrapper">
+                    <i class="fab fa-linkedin-in social-icon"></i>
+                    <span>لينكد إن | LinkedIn</span>
+                </div>
+                <i class="fas fa-chevron-left arrow-icon"></i>
+            </a>
 
             <!-- فيسبوك -->
             <a href="https://www.facebook.com/ashrafabuhalala" target="_blank" class="link-item">
@@ -205,24 +382,14 @@
                 <i class="fas fa-chevron-left arrow-icon"></i>
             </a>
 
-            <!-- سناب شات -->
-            <a href="https://www.snapchat.com/add/ii4on3?share_id=vxHMlI4Eco8&locale=ar-EG-u-nu-latn" target="_blank" class="link-item">
-                <div class="icon-wrapper">
-                    <i class="fab fa-snapchat social-icon"></i>
-                    <span>سناب شات</span>
-                </div>
-                <i class="fas fa-chevron-left arrow-icon"></i>
-            </a>
-
-            <!-- واتساب -->
+            <!-- واتساب للأعمال -->
             <a href="https://wa.me/218923853295" target="_blank" class="link-item">
                 <div class="icon-wrapper">
                     <i class="fab fa-whatsapp social-icon"></i>
-                    <span>واتساب</span>
+                    <span>تواصل عمل (واتساب)</span>
                 </div>
                 <i class="fas fa-chevron-left arrow-icon"></i>
             </a>
-
         </div>
 
         <!-- الحقوق -->
@@ -231,6 +398,48 @@
         </div>
     </div>
 
+    <!-- النافذة المنبثقة للمقالة الأولى -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal1')">&times;</span>
+            <h2 style="font-family: 'Cairo'; margin-bottom: 10px;">مستقبل التسويق الرقمي في الشرق الأوسط 2026</h2>
+            <p style="font-family: 'Cairo'; font-size: 0.85rem; color: #777; margin-bottom: 15px;">نُشر في 15 أغسطس 2026</p>
+            <div style="font-family: 'Cairo'; font-size: 0.9rem; line-height: 1.8; color: #444;">
+                <p>يشهد قطاع التسويق تحولاً جذرياً مع اعتماد خوارزميات التخصيص الفائق والذكاء الاصطناعي التوليدي.</p>
+                <br>
+                <p>بصفتي CMO، أرى أن الأولوية الآن لم تعد فقط لجلب الزيارات (Traffic)، بل لبناء علاقة مستدامة مع العميل قائمة على القيمة الحقيقية والمحتوى الاستراتيجي الموجه بدقة.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- النافذة المنبثقة للمقالة الثانية -->
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal2')">&times;</span>
+            <h2 style="font-family: 'Cairo'; margin-bottom: 10px;">كيف تبني علامة تجارية راسخة في الأزمات؟</h2>
+            <p style="font-family: 'Cairo'; font-size: 0.85rem; color: #777; margin-bottom: 15px;">نُشر في 20 يوليو 2026</p>
+            <div style="font-family: 'Cairo'; font-size: 0.9rem; line-height: 1.8; color: #444;">
+                <p>في أوقات التغيرات الاقتصادية والسوقية، تميل أغلب الشركات إلى خفض ميزانيات التسويق، وهو خطأ استراتيجي شائع.</p>
+                <br>
+                <p>العلامات التجارية القوية هي التي تستغل هذه المراحل لإعادة صياغة الرسالة التسويقية والاقتراب من احتياجات العميل الفعلية لتضمن ريادة السوق فور استقراره.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openModal(id) {
+            document.getElementById(id).style.display = "flex";
+        }
+        function closeModal(id) {
+            document.getElementById(id).style.display = "none";
+        }
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.style.display = "none";
+            }
+        }
+    </script>
+
 </body>
-  </html>
-  
+    </html>
+    
